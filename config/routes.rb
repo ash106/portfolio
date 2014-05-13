@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root :to => "visitors#index"
+  root 'projects#index'
   devise_for :users
   resources :users
+  resources :projects
 end
