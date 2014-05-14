@@ -1,1 +1,8 @@
-%h1.text-center Listing all Projects
+%h1.text-center Listing All Projects
+
+- @projects.each do |project|
+  %h2= link_to project.name, project
+  %p= project.description
+  %p= project.url
+
+%p= link_to 'Add New Project', new_project_path

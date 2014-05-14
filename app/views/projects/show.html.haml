@@ -1,0 +1,11 @@
+%h1.text-center Profile for #{@project.name}
+
+%h3 Description
+%p= @project.description
+
+%h3 URL
+%p= @project.url
+
+%p
+  = link_to 'Edit', edit_project_path(@project), class: 'btn btn-default', role: 'button'
+  = link_to 'Delete', @project, method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-danger', role: 'button'
