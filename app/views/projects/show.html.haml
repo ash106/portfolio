@@ -1,10 +1,15 @@
 %h1.text-center Profile for #{@project.name}
 
+%h3 URL
+%p= @project.url
+
 %h3 Description
 %p= @project.description
 
-%h3 URL
-%p= @project.url
+%h3 Pictures
+- @pictures.each do |picture|
+  %p= link_to image_tag(picture.image.url(:thumb)), project_picture_path(@project, picture)
+%p= link_to 'Add New Picture', new_project_picture_path(@project), class: 'btn btn-primary', role: 'button'
 
 %p
   = link_to 'Edit', edit_project_path(@project), class: 'btn btn-default', role: 'button'

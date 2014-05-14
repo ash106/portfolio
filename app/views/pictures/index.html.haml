@@ -1,0 +1,5 @@
+%h1.text-center Pictures for #{@project.name}
+
+- @pictures.each do |picture|
+  %p= picture.title
+  = image_tag picture.image.url(:thumb)

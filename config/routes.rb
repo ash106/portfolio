@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'home#contact', as: :contact
   devise_for :users
   resources :users
-  resources :projects
+  resources :projects do
+    resources :pictures
+  end
 end

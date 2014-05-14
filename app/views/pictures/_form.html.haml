@@ -1,0 +1,9 @@
+= form_for [@project, @picture], html: { multipart: true } do |f|
+  = f.label :title
+  = f.text_field :title
+  %br
+  = f.label :image
+  = image_tag @picture.image.url(:thumb)
+  = f.file_field :image
+  %br
+  = f.submit class: "btn btn-primary"

@@ -1,0 +1,6 @@
+%h1.text-center= @picture.title
+%p= image_tag @picture.image.url(:medium)
+
+%p.text-center
+  = link_to 'Edit', edit_project_picture_path(@project, @picture), class: 'btn btn-default', role: 'button'
+  = link_to 'Delete', project_picture_path(@project, @picture), method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-danger', role: 'button'
