@@ -1,3 +1,7 @@
+$body-bg: #323232;
+$text-color: #fff;
+$link-color: #e4424f;
+
 // import the CSS framework
 @import "bootstrap";
 
@@ -34,8 +38,8 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #fff;
-  padding-bottom: 80px;
+  // background-color: #323232;
+  padding-bottom: 60px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
   }
@@ -78,4 +82,76 @@ section {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-xs;
+}
+
+
+
+
+h1 {
+  // margin-top: 10px;
+  font-size: 1.65em;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  // background-color: #323232;
+  p {
+    margin: 1em 0;
+    font-size: 0.9em;
+    clear: both;
+  }
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('/images/phone-white.png');
+}
+
+.contact-info li.email a {
+  background-image: url('/images/email-white.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('/images/twitter-white.png');
+}
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+img {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }

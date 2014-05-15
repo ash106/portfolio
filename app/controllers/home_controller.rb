@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def portfolio
+    @projects = Project.all
   end
 
   def about

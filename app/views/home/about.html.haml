@@ -1,2 +1,6 @@
-%h1 Home#about
-%p Find me in app/views/home/about.html.haml
+.row
+  .col-sm-4= image_tag '/images/alex.jpg', alt: 'Photo of Alex Howington', class: 'profile-photo'
+  .col-sm-8
+    %h3 About
+    %p Hi, my name is Alex Howington and I'm a web developer. I enjoy creating good looking websites using interesting technologies on both the front and back end.
+    %p Check out my blog #{link_to 'Wheatbox Studios', 'http://www.wheatboxstudios.com/'} or follow me on Twitter #{link_to '@alexhowington', 'http://twitter.com/alexhowington'}.
