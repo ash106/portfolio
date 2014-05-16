@@ -2,6 +2,7 @@ $body-bg: #323232;
 $text-color: #fff;
 $link-color: #e4424f;
 $font-family-sans-serif: 'Open Sans', sans-serif;
+$input-bg: #000;
 
 // import the CSS framework
 @import "bootstrap";
@@ -207,4 +208,8 @@ uncomment this part if you haven't added this code anywhere else
   margin: 40px auto 0;
   text-align: center;
   padding-right: 0;
+}
+
+input, textarea {
+  background-color: #323232;
 }
