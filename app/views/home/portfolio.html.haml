@@ -1,5 +1,5 @@
 .row
   - @projects.each do |project|
     .col-sm-6.col-md-4.col-lg-3
-      %p= image_tag get_main_image(project)
-      %p.text-center= project.name
+      %p= image_tag get_main_image(project, :medium)
+      %p.text-center= link_to project.name, project.url
