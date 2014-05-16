@@ -19,6 +19,7 @@ gem 'unicorn-rails'
 gem "paperclip", github: 'thoughtbot/paperclip'
 gem 'aws-sdk'
 gem 'figaro'
+gem 'magnific-popup-rails'
 group :development do
   gem 'powder'
   gem 'pry-rails'
